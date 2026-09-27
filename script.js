@@ -37,3 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// --- contact logic ---
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('sender-name').value.trim();
+            const email = document.getElementById('sender-email').value.trim();
+            const message = document.getElementById('sender-message').value.trim();
+            
+            const body = encodeURIComponent(`${message}`);
+            
+            window.location.href = `mailto:cjohnson5848@gmail.com?body=${body}`;
+        });
+    }
