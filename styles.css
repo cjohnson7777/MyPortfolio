@@ -240,6 +240,48 @@ a:hover {
     visibility: visible;
 }
 
+/* currently working on */
+.project-info {
+    margin-top: 16px;
+}
+
+.project-info h3 {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.project-info p {
+    font-family: monospace;
+    font-size: 14px;
+    color: var(--c-700);
+    margin-top: 8px;
+}
+
+.project-info img {
+    max-width: 60px;
+    object-fit: contain;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.project-img-box {
+    width: 100%;
+    height: 650px; 
+    border: 1px solid var(--c-900);
+    overflow: hidden;
+}
+
+.project-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
 /* contact */
 .contact-links {
     display: flex;
@@ -249,7 +291,7 @@ a:hover {
 }
 
 .contact-links a {
-    font-size: 34px;
+    font-size: 34px !important;
     font-weight: 800;
     color: var(--c-900);
     background-color: transparent;
